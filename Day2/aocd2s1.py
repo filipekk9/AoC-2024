@@ -1,6 +1,3 @@
-input = [list(map(int,x.split(" "))) for x in open("input2.txt", "r").read().splitlines()]
-safe = 0
-
 def if_asc(x):
     result = all(y < z for y,z in zip(x, x[1:]))
     return result
@@ -16,6 +13,9 @@ def if_asc_morethan3(x):
 def if_dsc_morethan3(x):
     result = all(y < z + 4 for y, z in zip(x, x[1:]))
     return result
+
+input = [list(map(int,x.split(" "))) for x in open("input2.txt", "r").read().splitlines()]
+safe = 0
 
 for x in input:
 
