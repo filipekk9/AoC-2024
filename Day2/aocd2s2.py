@@ -52,5 +52,4 @@ for x in input:
         if list_safe > 0:
             safe+=1
 
-
 print (safe)
