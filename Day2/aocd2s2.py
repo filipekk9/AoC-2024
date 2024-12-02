@@ -1,6 +1,6 @@
 input = [list(map(int,x.split(" "))) for x in open("input2.txt", "r").read().splitlines()]
 safe = 0
-
+# łopatologia
 for x in input:
     is_safe = 0
     asc = all(y < z for y,z in zip(x, x[1:]))
