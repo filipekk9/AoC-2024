@@ -32,6 +32,7 @@ for x in input:
         if dsc3:
             safe+=1
 
+
 print(safe)
 
 
