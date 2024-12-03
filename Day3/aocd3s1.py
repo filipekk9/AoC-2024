@@ -1,8 +1,7 @@
 import re
 
 def mul(x,y):
-    multiplication = x * y
-    return multiplication
+    return x*y
 
 sum = 0
 input = open("input.txt", "r").read()
