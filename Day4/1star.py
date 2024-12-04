@@ -23,10 +23,9 @@ def get_diagonals_rl(grid, len):
     return diagonals
 
 
-def xmas_finder(inputtext):
-    input = inputtext
+def xmas_finder(grid):
     count = 0
-    for row in input:
+    for row in grid:
         results = re.findall(pattern, row)
         results_r = re.findall(pattern_r, row)
         count += len(results)
