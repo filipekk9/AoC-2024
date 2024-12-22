@@ -11,6 +11,7 @@ def get_diagonals_lr(grid, len):
         diagonals.append("".join(diagonal))
     return diagonals
 
+
 def get_diagonals_rl(grid, len):
     diagonals = []
     for diag in range(2 * len - 1):
@@ -34,7 +35,7 @@ def xmas_finder(grid):
 
 
 
-input_horizontal = [line.strip() for line in open("input.txt", "r")]
+input_horizontal = [line.strip() for line in open("test_input.txt", "r")]
 input_vertical = list(zip(*input_horizontal))
 input_vertical = ["".join(letter) for letter in input_vertical]
 count = 0

@@ -7,7 +7,6 @@ def get_grids_3x3(grid, grid_len):
         for col_start in range(grid_len - 2):
             subgrid = [row[col_start:col_start + 3] for row in grid[row_start:row_start + 3]]
             subgrids.append(subgrid)
-
     return subgrids
 
 input = [line.strip() for line in open("input.txt", "r")]
